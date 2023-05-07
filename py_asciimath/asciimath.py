@@ -18,6 +18,7 @@ def get_symbols_for(symbol_group, lang_to):  # pragma: no cover
 
 binary_functions = {
     "frac": {"latex": "\\frac", "mathml": "<mfrac>{}{}</mfrac>"},
+    "binom": {"latex": "\\binom", "mathml": "<mo>(</mo><mfrac linethickness='0'>{}{}</mfrac><mo>)</mo>"},
     "root": {"latex": "\\sqrt", "mathml": "<mroot>{}{}</mroot>"},
     "stackrel": {"latex": "\\stackrel", "mathml": "<mover>{}{}</mover>"},
     "overset": {"latex": "\\overset", "mathml": "<mover>{}{}</mover>"},
@@ -431,6 +432,7 @@ misc_symbols = {
     "QQ": {"latex": "\\mathbb{Q}", "mathml": "&Qopf;"},
     "RR": {"latex": "\\mathbb{R}", "mathml": "&Ropf;"},
     "ZZ": {"latex": "\\mathbb{Z}", "mathml": "&Zopf;"},
+    "!": {"latex": "!", "mathml": "!"},
 }
 
 # matrix2par = {
